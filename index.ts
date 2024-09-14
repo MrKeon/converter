@@ -65,13 +65,13 @@ export const downloadVideo = async (url: string, outputPath: string, maxDuration
   console.log(process.argv);
   const regex = config.regexPatterns.filenamePattern;
   const match = url.match(regex);
-
+  let outputPath = "";
   try {
     if (match) {
       const filename = match[1]; // Extract the filename
       const parentDir = filename.split('-')[0];
       // Construct the output path using the base path from the config
-      const outputPath = `${config.paths.mediaServerBase}/${parentDir}/${filename}.mp4`;
+      outputPath = `${config.paths.mediaServerBase}/${parentDir}/${filename}.mp4`;
       await downloadVideo(url, outputPath);
     } else {
       console.log(`Failed to match regex: ${regex} to url: ${url}`);

@@ -25,3 +25,13 @@ This project is a Node.js application written in TypeScript (`ts-node`) that use
    ```bash
    git clone https://github.com/MrKeon/converter.git
    cd converter
+
+## Support
+
+If you find this project useful, consider supporting me by buying me a coffee!
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/mrkeon)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
