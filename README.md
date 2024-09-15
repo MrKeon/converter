@@ -25,7 +25,13 @@ This project is a Node.js application written in TypeScript (`ts-node`) that use
    ```bash
    git clone https://github.com/MrKeon/converter.git
    cd converter
+2. Install requirements:
 
+    ### **IMPORTANT:** Copy the `config.example.ts` to `config.ts` and update the regex pattern matching and base directory
+
+    ```bash
+    npm i
+    npm run start [url]
 ## Support
 
 If you find this project useful, consider supporting me by buying me a coffee!
